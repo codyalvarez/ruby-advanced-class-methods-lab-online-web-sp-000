@@ -10,10 +10,11 @@ class Song
     self.class.all << self
   end
 
-  def self.create
-    song = Song.new
-    Song.all.include?(song)
-  end
+def initialize(name)
+  @name = name 
+  @@all << self 
+end 
+  
 
 
 end
